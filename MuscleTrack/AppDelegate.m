@@ -22,7 +22,7 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     MTKEnterWorkoutViewController *enterWorkoutVC = [MTKEnterWorkoutViewController new];
     self.window.rootViewController = enterWorkoutVC;
-    
+    [self.window makeKeyAndVisible];
     
     return YES;
 }
