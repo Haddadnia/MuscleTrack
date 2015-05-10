@@ -6,16 +6,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MuscleTrack/MTKEnterWorkoutViewController.m"
-            timestampString = "452915884.904822"
+            timestampString = "452917209.28484"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "24"
-            endingLineNumber = "24"
-            landmarkName = "-init"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
+            landmarkName = "-addBodyButtons"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

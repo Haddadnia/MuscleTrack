@@ -46,7 +46,14 @@
     self.chestButton = [UIButton new];
     [self.chestButton setBackgroundColor:[UIColor greenColor]];
     
-    [self.chestButton setImage:[UIImage imageNamed:@"icons/Abs.png"] forState:UIControlStateNormal];
+//    
+//    [NSBundle pathForResource:@"Abs.png" ofType:@"image" inDirectory:@"icons"];
+//    UIImage *image = [UIImage imageWithContentsOfFile:@"Abs.png"];
+//    
+//    
+////    [self.chestButton setImage:image forState:UIControlStateNormal];
+    
+    [self.chestButton setImage:[UIImage imageNamed:@"Abs"] forState:UIControlStateNormal];
     [self.chestButton sizeToFit];
     [self.chestButton setFrame:CGRectMake(23, 22, 222, 222)];
     
