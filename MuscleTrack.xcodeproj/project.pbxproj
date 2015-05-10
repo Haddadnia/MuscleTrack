@@ -9,11 +9,54 @@
 /* Begin PBXBuildFile section */
 		C371C63F1AFEEBD7008FA88C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C371C63E1AFEEBD7008FA88C /* main.m */; };
 		C371C6421AFEEBD7008FA88C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C371C6411AFEEBD7008FA88C /* AppDelegate.m */; };
-		C371C6451AFEEBD7008FA88C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C371C6441AFEEBD7008FA88C /* ViewController.m */; };
-		C371C6481AFEEBD7008FA88C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C371C6461AFEEBD7008FA88C /* Main.storyboard */; };
+		C371C6451AFEEBD7008FA88C /* MTKEnterWorkoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C371C6441AFEEBD7008FA88C /* MTKEnterWorkoutViewController.m */; };
 		C371C64A1AFEEBD7008FA88C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C371C6491AFEEBD7008FA88C /* Images.xcassets */; };
 		C371C64D1AFEEBD7008FA88C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C371C64B1AFEEBD7008FA88C /* LaunchScreen.xib */; };
 		C371C6591AFEEBD7008FA88C /* MuscleTrackTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C371C6581AFEEBD7008FA88C /* MuscleTrackTests.m */; };
+		C371C68F1AFEF043008FA88C /* Abs.png in Resources */ = {isa = PBXBuildFile; fileRef = C371C6631AFEF042008FA88C /* Abs.png */; };
+		C371C6901AFEF043008FA88C /* Abs@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C371C6641AFEF042008FA88C /* Abs@2x.png */; };
+		C371C6911AFEF043008FA88C /* Abs_red.png in Resources */ = {isa = PBXBuildFile; fileRef = C371C6651AFEF042008FA88C /* Abs_red.png */; };
+		C371C6921AFEF043008FA88C /* Abs_red@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C371C6661AFEF042008FA88C /* Abs_red@2x.png */; };
+		C371C6931AFEF043008FA88C /* Biceps.png in Resources */ = {isa = PBXBuildFile; fileRef = C371C6671AFEF042008FA88C /* Biceps.png */; };
+		C371C6941AFEF043008FA88C /* Biceps@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C371C6681AFEF042008FA88C /* Biceps@2x.png */; };
+		C371C6951AFEF043008FA88C /* Biceps_red.png in Resources */ = {isa = PBXBuildFile; fileRef = C371C6691AFEF042008FA88C /* Biceps_red.png */; };
+		C371C6961AFEF043008FA88C /* Biceps_red@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C371C66A1AFEF042008FA88C /* Biceps_red@2x.png */; };
+		C371C6971AFEF043008FA88C /* Calves.png in Resources */ = {isa = PBXBuildFile; fileRef = C371C66B1AFEF042008FA88C /* Calves.png */; };
+		C371C6981AFEF043008FA88C /* Calves@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C371C66C1AFEF042008FA88C /* Calves@2x.png */; };
+		C371C6991AFEF043008FA88C /* Calves_red.png in Resources */ = {isa = PBXBuildFile; fileRef = C371C66D1AFEF042008FA88C /* Calves_red.png */; };
+		C371C69A1AFEF043008FA88C /* Calves_red@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C371C66E1AFEF042008FA88C /* Calves_red@2x.png */; };
+		C371C69B1AFEF043008FA88C /* Chest.png in Resources */ = {isa = PBXBuildFile; fileRef = C371C66F1AFEF042008FA88C /* Chest.png */; };
+		C371C69C1AFEF043008FA88C /* Chest@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C371C6701AFEF042008FA88C /* Chest@2x.png */; };
+		C371C69D1AFEF043008FA88C /* Chest_red.png in Resources */ = {isa = PBXBuildFile; fileRef = C371C6711AFEF042008FA88C /* Chest_red.png */; };
+		C371C69E1AFEF043008FA88C /* Chest_red@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C371C6721AFEF042008FA88C /* Chest_red@2x.png */; };
+		C371C69F1AFEF043008FA88C /* Face.png in Resources */ = {isa = PBXBuildFile; fileRef = C371C6731AFEF042008FA88C /* Face.png */; };
+		C371C6A01AFEF043008FA88C /* Face@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C371C6741AFEF042008FA88C /* Face@2x.png */; };
+		C371C6A11AFEF043008FA88C /* Forearms.png in Resources */ = {isa = PBXBuildFile; fileRef = C371C6751AFEF042008FA88C /* Forearms.png */; };
+		C371C6A21AFEF043008FA88C /* Forearms@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C371C6761AFEF042008FA88C /* Forearms@2x.png */; };
+		C371C6A31AFEF043008FA88C /* Forearms_red.png in Resources */ = {isa = PBXBuildFile; fileRef = C371C6771AFEF042008FA88C /* Forearms_red.png */; };
+		C371C6A41AFEF043008FA88C /* Forearms_red@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C371C6781AFEF042008FA88C /* Forearms_red@2x.png */; };
+		C371C6A51AFEF043008FA88C /* Group.png in Resources */ = {isa = PBXBuildFile; fileRef = C371C6791AFEF042008FA88C /* Group.png */; };
+		C371C6A61AFEF043008FA88C /* Group@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C371C67A1AFEF042008FA88C /* Group@2x.png */; };
+		C371C6A71AFEF043008FA88C /* Obliques.png in Resources */ = {isa = PBXBuildFile; fileRef = C371C67B1AFEF042008FA88C /* Obliques.png */; };
+		C371C6A81AFEF043008FA88C /* Obliques@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C371C67C1AFEF042008FA88C /* Obliques@2x.png */; };
+		C371C6A91AFEF043008FA88C /* Obliques_red.png in Resources */ = {isa = PBXBuildFile; fileRef = C371C67D1AFEF042008FA88C /* Obliques_red.png */; };
+		C371C6AA1AFEF043008FA88C /* Obliques_red@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C371C67E1AFEF042008FA88C /* Obliques_red@2x.png */; };
+		C371C6AB1AFEF043008FA88C /* Quads.png in Resources */ = {isa = PBXBuildFile; fileRef = C371C67F1AFEF042008FA88C /* Quads.png */; };
+		C371C6AC1AFEF043008FA88C /* Quads@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C371C6801AFEF042008FA88C /* Quads@2x.png */; };
+		C371C6AD1AFEF043008FA88C /* Quads_red.png in Resources */ = {isa = PBXBuildFile; fileRef = C371C6811AFEF042008FA88C /* Quads_red.png */; };
+		C371C6AE1AFEF043008FA88C /* Quads_red@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C371C6821AFEF042008FA88C /* Quads_red@2x.png */; };
+		C371C6AF1AFEF043008FA88C /* Shoulders.png in Resources */ = {isa = PBXBuildFile; fileRef = C371C6831AFEF042008FA88C /* Shoulders.png */; };
+		C371C6B01AFEF043008FA88C /* Shoulders@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C371C6841AFEF042008FA88C /* Shoulders@2x.png */; };
+		C371C6B11AFEF043008FA88C /* Shoulders_red.png in Resources */ = {isa = PBXBuildFile; fileRef = C371C6851AFEF042008FA88C /* Shoulders_red.png */; };
+		C371C6B21AFEF043008FA88C /* Shoulders_red@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C371C6861AFEF042008FA88C /* Shoulders_red@2x.png */; };
+		C371C6B31AFEF043008FA88C /* Traps.png in Resources */ = {isa = PBXBuildFile; fileRef = C371C6871AFEF042008FA88C /* Traps.png */; };
+		C371C6B41AFEF043008FA88C /* Traps@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C371C6881AFEF042008FA88C /* Traps@2x.png */; };
+		C371C6B51AFEF043008FA88C /* Traps_red.png in Resources */ = {isa = PBXBuildFile; fileRef = C371C6891AFEF042008FA88C /* Traps_red.png */; };
+		C371C6B61AFEF043008FA88C /* Traps_red@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C371C68A1AFEF042008FA88C /* Traps_red@2x.png */; };
+		C371C6B71AFEF043008FA88C /* Triceps.png in Resources */ = {isa = PBXBuildFile; fileRef = C371C68B1AFEF042008FA88C /* Triceps.png */; };
+		C371C6B81AFEF043008FA88C /* Triceps@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C371C68C1AFEF042008FA88C /* Triceps@2x.png */; };
+		C371C6B91AFEF043008FA88C /* Triceps_red.png in Resources */ = {isa = PBXBuildFile; fileRef = C371C68D1AFEF042008FA88C /* Triceps_red.png */; };
+		C371C6BA1AFEF043008FA88C /* Triceps_red@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C371C68E1AFEF043008FA88C /* Triceps_red@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +75,57 @@
 		C371C63E1AFEEBD7008FA88C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C371C6401AFEEBD7008FA88C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C371C6411AFEEBD7008FA88C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		C371C6431AFEEBD7008FA88C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		C371C6441AFEEBD7008FA88C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		C371C6471AFEEBD7008FA88C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C371C6431AFEEBD7008FA88C /* MTKEnterWorkoutViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTKEnterWorkoutViewController.h; sourceTree = "<group>"; };
+		C371C6441AFEEBD7008FA88C /* MTKEnterWorkoutViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTKEnterWorkoutViewController.m; sourceTree = "<group>"; };
 		C371C6491AFEEBD7008FA88C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C371C64C1AFEEBD7008FA88C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		C371C6521AFEEBD7008FA88C /* MuscleTrackTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MuscleTrackTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C371C6571AFEEBD7008FA88C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C371C6581AFEEBD7008FA88C /* MuscleTrackTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MuscleTrackTests.m; sourceTree = "<group>"; };
+		C371C6631AFEF042008FA88C /* Abs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Abs.png; sourceTree = "<group>"; };
+		C371C6641AFEF042008FA88C /* Abs@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Abs@2x.png"; sourceTree = "<group>"; };
+		C371C6651AFEF042008FA88C /* Abs_red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Abs_red.png; sourceTree = "<group>"; };
+		C371C6661AFEF042008FA88C /* Abs_red@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Abs_red@2x.png"; sourceTree = "<group>"; };
+		C371C6671AFEF042008FA88C /* Biceps.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Biceps.png; sourceTree = "<group>"; };
+		C371C6681AFEF042008FA88C /* Biceps@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Biceps@2x.png"; sourceTree = "<group>"; };
+		C371C6691AFEF042008FA88C /* Biceps_red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Biceps_red.png; sourceTree = "<group>"; };
+		C371C66A1AFEF042008FA88C /* Biceps_red@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Biceps_red@2x.png"; sourceTree = "<group>"; };
+		C371C66B1AFEF042008FA88C /* Calves.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Calves.png; sourceTree = "<group>"; };
+		C371C66C1AFEF042008FA88C /* Calves@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Calves@2x.png"; sourceTree = "<group>"; };
+		C371C66D1AFEF042008FA88C /* Calves_red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Calves_red.png; sourceTree = "<group>"; };
+		C371C66E1AFEF042008FA88C /* Calves_red@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Calves_red@2x.png"; sourceTree = "<group>"; };
+		C371C66F1AFEF042008FA88C /* Chest.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Chest.png; sourceTree = "<group>"; };
+		C371C6701AFEF042008FA88C /* Chest@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Chest@2x.png"; sourceTree = "<group>"; };
+		C371C6711AFEF042008FA88C /* Chest_red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Chest_red.png; sourceTree = "<group>"; };
+		C371C6721AFEF042008FA88C /* Chest_red@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Chest_red@2x.png"; sourceTree = "<group>"; };
+		C371C6731AFEF042008FA88C /* Face.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Face.png; sourceTree = "<group>"; };
+		C371C6741AFEF042008FA88C /* Face@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Face@2x.png"; sourceTree = "<group>"; };
+		C371C6751AFEF042008FA88C /* Forearms.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Forearms.png; sourceTree = "<group>"; };
+		C371C6761AFEF042008FA88C /* Forearms@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Forearms@2x.png"; sourceTree = "<group>"; };
+		C371C6771AFEF042008FA88C /* Forearms_red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Forearms_red.png; sourceTree = "<group>"; };
+		C371C6781AFEF042008FA88C /* Forearms_red@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Forearms_red@2x.png"; sourceTree = "<group>"; };
+		C371C6791AFEF042008FA88C /* Group.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Group.png; sourceTree = "<group>"; };
+		C371C67A1AFEF042008FA88C /* Group@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Group@2x.png"; sourceTree = "<group>"; };
+		C371C67B1AFEF042008FA88C /* Obliques.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Obliques.png; sourceTree = "<group>"; };
+		C371C67C1AFEF042008FA88C /* Obliques@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Obliques@2x.png"; sourceTree = "<group>"; };
+		C371C67D1AFEF042008FA88C /* Obliques_red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Obliques_red.png; sourceTree = "<group>"; };
+		C371C67E1AFEF042008FA88C /* Obliques_red@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Obliques_red@2x.png"; sourceTree = "<group>"; };
+		C371C67F1AFEF042008FA88C /* Quads.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Quads.png; sourceTree = "<group>"; };
+		C371C6801AFEF042008FA88C /* Quads@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Quads@2x.png"; sourceTree = "<group>"; };
+		C371C6811AFEF042008FA88C /* Quads_red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Quads_red.png; sourceTree = "<group>"; };
+		C371C6821AFEF042008FA88C /* Quads_red@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Quads_red@2x.png"; sourceTree = "<group>"; };
+		C371C6831AFEF042008FA88C /* Shoulders.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Shoulders.png; sourceTree = "<group>"; };
+		C371C6841AFEF042008FA88C /* Shoulders@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Shoulders@2x.png"; sourceTree = "<group>"; };
+		C371C6851AFEF042008FA88C /* Shoulders_red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Shoulders_red.png; sourceTree = "<group>"; };
+		C371C6861AFEF042008FA88C /* Shoulders_red@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Shoulders_red@2x.png"; sourceTree = "<group>"; };
+		C371C6871AFEF042008FA88C /* Traps.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Traps.png; sourceTree = "<group>"; };
+		C371C6881AFEF042008FA88C /* Traps@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Traps@2x.png"; sourceTree = "<group>"; };
+		C371C6891AFEF042008FA88C /* Traps_red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Traps_red.png; sourceTree = "<group>"; };
+		C371C68A1AFEF042008FA88C /* Traps_red@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Traps_red@2x.png"; sourceTree = "<group>"; };
+		C371C68B1AFEF042008FA88C /* Triceps.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Triceps.png; sourceTree = "<group>"; };
+		C371C68C1AFEF042008FA88C /* Triceps@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Triceps@2x.png"; sourceTree = "<group>"; };
+		C371C68D1AFEF042008FA88C /* Triceps_red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Triceps_red.png; sourceTree = "<group>"; };
+		C371C68E1AFEF043008FA88C /* Triceps_red@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Triceps_red@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +152,7 @@
 				C371C63B1AFEEBD7008FA88C /* MuscleTrack */,
 				C371C6551AFEEBD7008FA88C /* MuscleTrackTests */,
 				C371C63A1AFEEBD7008FA88C /* Products */,
+				C371C6621AFEF042008FA88C /* icons */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,9 +170,8 @@
 			children = (
 				C371C6401AFEEBD7008FA88C /* AppDelegate.h */,
 				C371C6411AFEEBD7008FA88C /* AppDelegate.m */,
-				C371C6431AFEEBD7008FA88C /* ViewController.h */,
-				C371C6441AFEEBD7008FA88C /* ViewController.m */,
-				C371C6461AFEEBD7008FA88C /* Main.storyboard */,
+				C371C6431AFEEBD7008FA88C /* MTKEnterWorkoutViewController.h */,
+				C371C6441AFEEBD7008FA88C /* MTKEnterWorkoutViewController.m */,
 				C371C6491AFEEBD7008FA88C /* Images.xcassets */,
 				C371C64B1AFEEBD7008FA88C /* LaunchScreen.xib */,
 				C371C63C1AFEEBD7008FA88C /* Supporting Files */,
@@ -117,6 +203,58 @@
 				C371C6571AFEEBD7008FA88C /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C371C6621AFEF042008FA88C /* icons */ = {
+			isa = PBXGroup;
+			children = (
+				C371C6631AFEF042008FA88C /* Abs.png */,
+				C371C6641AFEF042008FA88C /* Abs@2x.png */,
+				C371C6651AFEF042008FA88C /* Abs_red.png */,
+				C371C6661AFEF042008FA88C /* Abs_red@2x.png */,
+				C371C6671AFEF042008FA88C /* Biceps.png */,
+				C371C6681AFEF042008FA88C /* Biceps@2x.png */,
+				C371C6691AFEF042008FA88C /* Biceps_red.png */,
+				C371C66A1AFEF042008FA88C /* Biceps_red@2x.png */,
+				C371C66B1AFEF042008FA88C /* Calves.png */,
+				C371C66C1AFEF042008FA88C /* Calves@2x.png */,
+				C371C66D1AFEF042008FA88C /* Calves_red.png */,
+				C371C66E1AFEF042008FA88C /* Calves_red@2x.png */,
+				C371C66F1AFEF042008FA88C /* Chest.png */,
+				C371C6701AFEF042008FA88C /* Chest@2x.png */,
+				C371C6711AFEF042008FA88C /* Chest_red.png */,
+				C371C6721AFEF042008FA88C /* Chest_red@2x.png */,
+				C371C6731AFEF042008FA88C /* Face.png */,
+				C371C6741AFEF042008FA88C /* Face@2x.png */,
+				C371C6751AFEF042008FA88C /* Forearms.png */,
+				C371C6761AFEF042008FA88C /* Forearms@2x.png */,
+				C371C6771AFEF042008FA88C /* Forearms_red.png */,
+				C371C6781AFEF042008FA88C /* Forearms_red@2x.png */,
+				C371C6791AFEF042008FA88C /* Group.png */,
+				C371C67A1AFEF042008FA88C /* Group@2x.png */,
+				C371C67B1AFEF042008FA88C /* Obliques.png */,
+				C371C67C1AFEF042008FA88C /* Obliques@2x.png */,
+				C371C67D1AFEF042008FA88C /* Obliques_red.png */,
+				C371C67E1AFEF042008FA88C /* Obliques_red@2x.png */,
+				C371C67F1AFEF042008FA88C /* Quads.png */,
+				C371C6801AFEF042008FA88C /* Quads@2x.png */,
+				C371C6811AFEF042008FA88C /* Quads_red.png */,
+				C371C6821AFEF042008FA88C /* Quads_red@2x.png */,
+				C371C6831AFEF042008FA88C /* Shoulders.png */,
+				C371C6841AFEF042008FA88C /* Shoulders@2x.png */,
+				C371C6851AFEF042008FA88C /* Shoulders_red.png */,
+				C371C6861AFEF042008FA88C /* Shoulders_red@2x.png */,
+				C371C6871AFEF042008FA88C /* Traps.png */,
+				C371C6881AFEF042008FA88C /* Traps@2x.png */,
+				C371C6891AFEF042008FA88C /* Traps_red.png */,
+				C371C68A1AFEF042008FA88C /* Traps_red@2x.png */,
+				C371C68B1AFEF042008FA88C /* Triceps.png */,
+				C371C68C1AFEF042008FA88C /* Triceps@2x.png */,
+				C371C68D1AFEF042008FA88C /* Triceps_red.png */,
+				C371C68E1AFEF043008FA88C /* Triceps_red@2x.png */,
+			);
+			name = icons;
+			path = MuscleTrack/icons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,9 +337,52 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C371C6481AFEEBD7008FA88C /* Main.storyboard in Resources */,
+				C371C69C1AFEF043008FA88C /* Chest@2x.png in Resources */,
+				C371C6BA1AFEF043008FA88C /* Triceps_red@2x.png in Resources */,
+				C371C6A41AFEF043008FA88C /* Forearms_red@2x.png in Resources */,
+				C371C6AA1AFEF043008FA88C /* Obliques_red@2x.png in Resources */,
+				C371C6B71AFEF043008FA88C /* Triceps.png in Resources */,
+				C371C6941AFEF043008FA88C /* Biceps@2x.png in Resources */,
+				C371C6AF1AFEF043008FA88C /* Shoulders.png in Resources */,
+				C371C68F1AFEF043008FA88C /* Abs.png in Resources */,
+				C371C6A01AFEF043008FA88C /* Face@2x.png in Resources */,
+				C371C6A51AFEF043008FA88C /* Group.png in Resources */,
+				C371C6AC1AFEF043008FA88C /* Quads@2x.png in Resources */,
+				C371C6AB1AFEF043008FA88C /* Quads.png in Resources */,
+				C371C6901AFEF043008FA88C /* Abs@2x.png in Resources */,
+				C371C69D1AFEF043008FA88C /* Chest_red.png in Resources */,
 				C371C64D1AFEEBD7008FA88C /* LaunchScreen.xib in Resources */,
+				C371C6911AFEF043008FA88C /* Abs_red.png in Resources */,
+				C371C6B01AFEF043008FA88C /* Shoulders@2x.png in Resources */,
+				C371C6951AFEF043008FA88C /* Biceps_red.png in Resources */,
+				C371C6961AFEF043008FA88C /* Biceps_red@2x.png in Resources */,
+				C371C6A81AFEF043008FA88C /* Obliques@2x.png in Resources */,
 				C371C64A1AFEEBD7008FA88C /* Images.xcassets in Resources */,
+				C371C6A11AFEF043008FA88C /* Forearms.png in Resources */,
+				C371C69F1AFEF043008FA88C /* Face.png in Resources */,
+				C371C6A91AFEF043008FA88C /* Obliques_red.png in Resources */,
+				C371C69A1AFEF043008FA88C /* Calves_red@2x.png in Resources */,
+				C371C6981AFEF043008FA88C /* Calves@2x.png in Resources */,
+				C371C6A21AFEF043008FA88C /* Forearms@2x.png in Resources */,
+				C371C6B91AFEF043008FA88C /* Triceps_red.png in Resources */,
+				C371C6B61AFEF043008FA88C /* Traps_red@2x.png in Resources */,
+				C371C6AE1AFEF043008FA88C /* Quads_red@2x.png in Resources */,
+				C371C6B11AFEF043008FA88C /* Shoulders_red.png in Resources */,
+				C371C6AD1AFEF043008FA88C /* Quads_red.png in Resources */,
+				C371C69B1AFEF043008FA88C /* Chest.png in Resources */,
+				C371C6971AFEF043008FA88C /* Calves.png in Resources */,
+				C371C69E1AFEF043008FA88C /* Chest_red@2x.png in Resources */,
+				C371C6991AFEF043008FA88C /* Calves_red.png in Resources */,
+				C371C6A61AFEF043008FA88C /* Group@2x.png in Resources */,
+				C371C6B51AFEF043008FA88C /* Traps_red.png in Resources */,
+				C371C6B31AFEF043008FA88C /* Traps.png in Resources */,
+				C371C6A31AFEF043008FA88C /* Forearms_red.png in Resources */,
+				C371C6B41AFEF043008FA88C /* Traps@2x.png in Resources */,
+				C371C6921AFEF043008FA88C /* Abs_red@2x.png in Resources */,
+				C371C6931AFEF043008FA88C /* Biceps.png in Resources */,
+				C371C6B81AFEF043008FA88C /* Triceps@2x.png in Resources */,
+				C371C6B21AFEF043008FA88C /* Shoulders_red@2x.png in Resources */,
+				C371C6A71AFEF043008FA88C /* Obliques.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,7 +400,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C371C6451AFEEBD7008FA88C /* ViewController.m in Sources */,
+				C371C6451AFEEBD7008FA88C /* MTKEnterWorkoutViewController.m in Sources */,
 				C371C6421AFEEBD7008FA88C /* AppDelegate.m in Sources */,
 				C371C63F1AFEEBD7008FA88C /* main.m in Sources */,
 			);
@@ -244,14 +425,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		C371C6461AFEEBD7008FA88C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C371C6471AFEEBD7008FA88C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C371C64B1AFEEBD7008FA88C /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -418,6 +591,7 @@
 				C371C65E1AFEEBD7008FA88C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C371C65F1AFEEBD7008FA88C /* Build configuration list for PBXNativeTarget "MuscleTrackTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +600,7 @@
 				C371C6611AFEEBD7008FA88C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
