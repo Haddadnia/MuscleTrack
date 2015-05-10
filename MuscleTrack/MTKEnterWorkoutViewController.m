@@ -13,6 +13,8 @@
 
 
 @property (nonatomic, strong) UIButton *chestButton;
+@property (nonatomic, strong) UIButton *absButton;
+@property (nonatomic, strong) UIButton *quadsButton;
 
 @end
 //////////////////////////////////////////////////////////////////////////////////////////////////
@@ -44,20 +46,53 @@
 
 - (void)addBodyButtons {
     self.chestButton = [UIButton new];
-    [self.chestButton setBackgroundColor:[UIColor greenColor]];
+
+    self.absButton = [UIButton new];
+    self.quadsButton = [UIButton new];
     
-//    
+    [self.chestButton addTarget:self action:@selector(buttonPressed:) forControlEvents:UIControlEventTouchUpInside];
+    [self.absButton addTarget:self action:@selector(buttonPressed:) forControlEvents:UIControlEventTouchUpInside];
+    [self.quadsButton addTarget:self action:@selector(buttonPressed:) forControlEvents:UIControlEventTouchUpInside];
+    
+//
 //    [NSBundle pathForResource:@"Abs.png" ofType:@"image" inDirectory:@"icons"];
 //    UIImage *image = [UIImage imageWithContentsOfFile:@"Abs.png"];
 //    
 //    
 ////    [self.chestButton setImage:image forState:UIControlStateNormal];
     
-    [self.chestButton setImage:[UIImage imageNamed:@"Abs"] forState:UIControlStateNormal];
+    [self.chestButton setImage:[UIImage imageNamed:@"Chest"] forState:UIControlStateNormal];
+    [self.chestButton setImage:[UIImage imageNamed:@"Chest_red"] forState:UIControlStateSelected];
     [self.chestButton sizeToFit];
-    [self.chestButton setFrame:CGRectMake(23, 22, 222, 222)];
-    
+    [self.chestButton setFrame:CGRectMake(23, 22, 322, 222)];
     [self.view addSubview:self.chestButton];
+    
+    [self.absButton setImage:[UIImage imageNamed:@"Abs"] forState:UIControlStateNormal];
+    [self.absButton setImage:[UIImage imageNamed:@"Abs_red"] forState:UIControlStateSelected];
+    [self.absButton sizeToFit];
+    [self.absButton setFrame:CGRectMake(73, 220, 222, 222)];
+    [self.view addSubview:self.absButton];
+    
+    [self.quadsButton setImage:[UIImage imageNamed:@"Quads"] forState:UIControlStateNormal];
+    [self.quadsButton setImage:[UIImage imageNamed:@"Quads_red"] forState:UIControlStateSelected];
+    [self.quadsButton sizeToFit];
+    [self.quadsButton setFrame:CGRectMake(73, self.absButton.frame.origin.y + self.absButton.frame.size.height+20, 222, 222)];
+    
+    [self.view addSubview:self.quadsButton];
+    
+    
 }
+
+# pragma 
+# pragma button handlers
+
+- (void)buttonPressed:(UIButton *)button {
+    if ([button isSelected]) {
+        [button setSelected:NO];
+    } else {
+        [button setSelected:YES];
+    }
+}
+
 
 @end
