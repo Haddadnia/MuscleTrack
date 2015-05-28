@@ -11,6 +11,10 @@
 //////////////////////////////////////////////////////////////////////////////////////////////////
 @interface MTKEnterWorkoutViewController ()
 
+
+
+@property (nonatomic, strong) NSArray *bodyButtons;
+
 @property (nonatomic, strong) UIButton *trapsButton;
 @property (nonatomic, strong) UIButton *chestButton;
 @property (nonatomic, strong) UIButton *absButton;
@@ -37,6 +41,7 @@
     self = [super init];
     if (self) {
         [self.view setBackgroundColor:[UIColor blueColor]];
+
         [self addBodyButtons];
     }
     return self;
@@ -56,14 +61,13 @@
 # pragma MTKEnterWorkoutViewController 
 
 - (void)addBodyButtons {
+
     
     self.trapsButton = [UIButton new];
     self.chestButton = [UIButton new];
     self.absButton = [UIButton new];
     self.quadsButton = [UIButton new];
     self.calvesButton = [UIButton new];
-    //////////////////////////////////////////////////////////////////////
-    
     self.bicepLeftButton = [UIButton new];
     self.bicepRightButton = [UIButton new];
     self.forearmLeftButton = [UIButton new];
@@ -72,26 +76,9 @@
     self.shoulderRightButton = [UIButton new];
     self.tricepLeftButton = [UIButton new];
     self.tricepRightButton = [UIButton new];
-    
-    
-    
-    [self.trapsButton addTarget:self action:@selector(buttonPressed:) forControlEvents:UIControlEventTouchUpInside];
-    [self.chestButton addTarget:self action:@selector(buttonPressed:) forControlEvents:UIControlEventTouchUpInside];
-    [self.absButton addTarget:self action:@selector(buttonPressed:) forControlEvents:UIControlEventTouchUpInside];
-    [self.quadsButton addTarget:self action:@selector(buttonPressed:) forControlEvents:UIControlEventTouchUpInside];
-    [self.calvesButton addTarget:self action:@selector(buttonPressed:) forControlEvents:UIControlEventTouchUpInside];
 
-    //////////////////////////////////////////////////////////////////////
-    [self.bicepLeftButton addTarget:self action:@selector(buttonPressed:) forControlEvents:UIControlEventTouchUpInside];
-    [self.bicepRightButton addTarget:self action:@selector(buttonPressed:) forControlEvents:UIControlEventTouchUpInside];
-    [self.forearmLeftButton addTarget:self action:@selector(buttonPressed:) forControlEvents:UIControlEventTouchUpInside];
-    [self.forearmRightButton addTarget:self action:@selector(buttonPressed:) forControlEvents:UIControlEventTouchUpInside];
-    [self.shoulderLeftButton addTarget:self action:@selector(buttonPressed:) forControlEvents:UIControlEventTouchUpInside];
-    [self.shoulderRightButton addTarget:self action:@selector(buttonPressed:) forControlEvents:UIControlEventTouchUpInside];
-    [self.tricepLeftButton addTarget:self action:@selector(buttonPressed:) forControlEvents:UIControlEventTouchUpInside];
-    [self.tricepRightButton addTarget:self action:@selector(buttonPressed:) forControlEvents:UIControlEventTouchUpInside];
-    
-    
+    self.bodyButtons = [NSArray arrayWithObjects:self.trapsButton,self.chestButton,self.absButton,self.quadsButton,self.calvesButton,self.bicepRightButton,self.bicepLeftButton,self.forearmLeftButton,self.forearmRightButton,self.shoulderRightButton,self.shoulderLeftButton,self.tricepLeftButton,self.tricepRightButton, nil];
+
     
     [self.trapsButton setImage:[UIImage imageNamed:@"Traps"] forState:UIControlStateNormal];
     [self.trapsButton setImage:[UIImage imageNamed:@"Traps_red"] forState:UIControlStateSelected];
@@ -99,8 +86,6 @@
     NSInteger trapsWidth = 200;
     NSInteger trapsHeight = trapsWidth-170;
     [self.trapsButton setFrame:CGRectMake(self.view.center.x - trapsWidth/2, 80, trapsWidth, trapsHeight)];
-    [self.view addSubview:self.trapsButton];
-    
     
     [self.chestButton setImage:[UIImage imageNamed:@"Chest"] forState:UIControlStateNormal];
     [self.chestButton setImage:[UIImage imageNamed:@"Chest_red"] forState:UIControlStateSelected];
@@ -108,8 +93,6 @@
     NSInteger chestWidth = 200;
     NSInteger chestHeight = chestWidth-120;
     [self.chestButton setFrame:CGRectMake(self.view.center.x - chestWidth/2, 120, chestWidth, chestHeight)];
-    [self.view addSubview:self.chestButton];
-    
 
     [self.absButton setImage:[UIImage imageNamed:@"Abs"] forState:UIControlStateNormal];
     [self.absButton setImage:[UIImage imageNamed:@"Abs_red"] forState:UIControlStateSelected];
@@ -117,7 +100,6 @@
     NSInteger absWidth = 125;
     NSInteger absHeight = absWidth;
     [self.absButton setFrame:CGRectMake(self.view.center.x - absWidth/2, 220, absWidth, absHeight)];
-    [self.view addSubview:self.absButton];
     
     [self.quadsButton setImage:[UIImage imageNamed:@"Quads"] forState:UIControlStateNormal];
     [self.quadsButton setImage:[UIImage imageNamed:@"Quads_red"] forState:UIControlStateSelected];
@@ -125,7 +107,6 @@
     NSInteger quadsWidth = 120;
     NSInteger quadsHeight = quadsWidth;
     [self.quadsButton setFrame:CGRectMake(self.view.center.x - quadsWidth/2, self.absButton.frame.origin.y + self.absButton.frame.size.height+20, quadsWidth, quadsHeight)];
-    [self.view addSubview:self.quadsButton];
     
     [self.calvesButton setImage:[UIImage imageNamed:@"Quads"] forState:UIControlStateNormal];
     [self.calvesButton setImage:[UIImage imageNamed:@"Quads_red"] forState:UIControlStateSelected];
@@ -133,9 +114,6 @@
     NSInteger calvesWidth = 100;
     NSInteger calvesHeight = calvesWidth;
     [self.calvesButton setFrame:CGRectMake(self.view.center.x - calvesWidth/2, self.quadsButton.frame.origin.y + self.quadsButton.frame.size.height+20, calvesWidth, calvesHeight)];
-    [self.view addSubview:self.calvesButton];
-    
-    
     
     //TODO
     
@@ -149,25 +127,21 @@
     [self.shoulderLeftButton setImage:[UIImage imageNamed:@"Shoulder_left_red"] forState:UIControlStateSelected];
     [self.shoulderLeftButton sizeToFit];
     [self.shoulderLeftButton setFrame:CGRectMake(self.chestButton.frame.origin.x - 55, 90, 50, 50)];
-    [self.view addSubview:self.shoulderLeftButton];
     
     [self.shoulderRightButton setImage:[UIImage imageNamed:@"Shoulder_right"] forState:UIControlStateNormal];
     [self.shoulderRightButton setImage:[UIImage imageNamed:@"Shoulder_right_red"] forState:UIControlStateSelected];
     [self.shoulderRightButton sizeToFit];
     [self.shoulderRightButton setFrame:CGRectMake(self.trapsButton.frame.origin.x + self.trapsButton.frame.size.width + 15, 90, 50, 50)];
-    [self.view addSubview:self.shoulderRightButton];
     
     [self.tricepLeftButton setImage:[UIImage imageNamed:@"Tricep_left"] forState:UIControlStateNormal];
     [self.tricepLeftButton setImage:[UIImage imageNamed:@"Tricep_left_red"] forState:UIControlStateSelected];
     [self.tricepLeftButton sizeToFit];
     [self.tricepLeftButton setFrame:CGRectMake(self.chestButton.frame.origin.x - 55, 140, 25, 40)];
-    [self.view addSubview:self.tricepLeftButton];
     
     [self.tricepRightButton setImage:[UIImage imageNamed:@"Tricep_right"] forState:UIControlStateNormal];
     [self.tricepRightButton setImage:[UIImage imageNamed:@"Tricep_right_red"] forState:UIControlStateSelected];
     [self.tricepRightButton sizeToFit];
     [self.tricepRightButton setFrame:CGRectMake(self.chestButton.frame.origin.x + self.chestButton.frame.size.width + 35, 140, 25, 40)];
-    [self.view addSubview:self.tricepRightButton];
     
     
     NSInteger bicepWidth = 40;
@@ -177,13 +151,11 @@
     [self.bicepLeftButton setImage:[UIImage imageNamed:@"Bicep_red"] forState:UIControlStateSelected];
     [self.bicepLeftButton sizeToFit];
     [self.bicepLeftButton setFrame:CGRectMake(self.chestButton.frame.origin.x-50, self.tricepLeftButton.frame.origin.y + self.tricepLeftButton.frame.size.height + 10, bicepWidth, bicepHeight)];
-    [self.view addSubview:self.bicepLeftButton];
     
     [self.bicepRightButton setImage:[UIImage imageNamed:@"Bicep"] forState:UIControlStateNormal];
     [self.bicepRightButton setImage:[UIImage imageNamed:@"Bicep_red"] forState:UIControlStateSelected];
     [self.bicepRightButton sizeToFit];
     [self.bicepRightButton setFrame:CGRectMake(self.self.tricepRightButton.frame.origin.x - 20, self.tricepLeftButton.frame.origin.y + self.tricepLeftButton.frame.size.height + 10, bicepWidth, bicepHeight)];
-    [self.view addSubview:self.bicepRightButton];
     
     NSInteger forearamWidth = 35;
     NSInteger forearamHeight = 85;
@@ -192,14 +164,20 @@
     [self.forearmLeftButton setImage:[UIImage imageNamed:@"Forearm_red"] forState:UIControlStateSelected];
     [self.forearmLeftButton sizeToFit];
     [self.forearmLeftButton setFrame:CGRectMake(self.bicepLeftButton.frame.origin.x + (bicepWidth - forearamWidth)/2, self.bicepLeftButton.frame.origin.y + self.bicepLeftButton.frame.size.height + 10, forearamWidth, forearamHeight)];
-    [self.view addSubview:self.forearmLeftButton];
+
     
     [self.forearmRightButton setImage:[UIImage imageNamed:@"Forearm"] forState:UIControlStateNormal];
     [self.forearmRightButton setImage:[UIImage imageNamed:@"Forearm_red"] forState:UIControlStateSelected];
     [self.forearmRightButton sizeToFit];
     [self.forearmRightButton setFrame:CGRectMake(self.bicepRightButton.frame.origin.x + (bicepWidth - forearamWidth)/2, self.bicepLeftButton.frame.origin.y + self.bicepLeftButton.frame.size.height + 10, forearamWidth, forearamHeight)];
-    [self.view addSubview:self.forearmRightButton];
+
     //////////////////////////////////////////////////////////////////////
+    
+    
+    for (UIButton *button in self.bodyButtons) {
+        [button addTarget:self action:@selector(buttonPressed:) forControlEvents:UIControlEventTouchUpInside];
+        [self.view addSubview:button];
+    }
     
 }
 
